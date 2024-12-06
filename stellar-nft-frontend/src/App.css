@@ -1,0 +1,26 @@
+.app-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.wallet-connect,
+.mint-nft {
+  margin-top: 30px;
+}
+
+.wallet-connect button,
+.mint-nft button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.mint-nft input[type='number'],
+.mint-nft input[type='file'] {
+  margin-left: 10px;
+}
+
+.mint-nft label {
+  display: block;
+  margin: 15px 0;
+}

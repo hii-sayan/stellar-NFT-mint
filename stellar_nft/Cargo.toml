@@ -1,0 +1,24 @@
+[package]
+name = "stellar_nft"
+version = "0.1.0"
+edition = "2021"
+description = "A Soroban smart contract for NFTs on the Stellar blockchain."
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+# Soroban SDK for Stellar smart contracts
+soroban-sdk = "22.0.0"
+
+
+[dev-dependencies]
+soroban-sdk = { version = "22.0.0", features = ["testutils"] }
+
+[lib]
+crate-type = ["cdylib"]
+
+[profile.release]
+# Optimize for smaller WASM size
+codegen-units = 1
+lto = "fat"
+opt-level = "z"
+panic = "abort"
